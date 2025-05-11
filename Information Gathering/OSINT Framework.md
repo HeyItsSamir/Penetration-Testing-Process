@@ -6,8 +6,7 @@ Open-Source Intelligence (OSINT) is a foundational part of the Information Gathe
 
 ### Open-Source Intelligence (General)
 
-**Objective:**  
-Gather publicly available data about the company, employees, technologies, domains, and overall digital footprint.
+**_Objective_:** Gather publicly available data about the company, employees, technologies, domains, and overall digital footprint.
 
 #### Subcategories & Tools:
 
@@ -27,8 +26,7 @@ Gather publicly available data about the company, employees, technologies, domai
 
 ### Infrastructure Enumeration
 
-**Objective:**  
-Identify internet-facing infrastructure and digital assets owned or operated by the target.
+**_Objective_:** Identify internet-facing infrastructure and digital assets owned or operated by the target.
 
 #### Subcategories & Tools:
 
@@ -48,8 +46,7 @@ Identify internet-facing infrastructure and digital assets owned or operated by 
 
 ### Service Enumeration
 
-**Objective:**  
-Identify exposed services, their configurations, and running technologies.
+**_Objective_:** Identify exposed services, their configurations, and running technologies.
 
 #### Subcategories & Tools:
 
@@ -69,18 +66,17 @@ Identify exposed services, their configurations, and running technologies.
 
 ### Host Enumeration
 
-**Objective:**  
-Identify live hosts, operating systems, and assign functional roles or vulnerabilities.
+**_Objective_:** Identify live hosts, operating systems, and assign functional roles or vulnerabilities.
 
 #### Subcategories & Tools:
 
-**Host Discovery**
+ **Host Discovery**
 - **Ping Sweep (Nmap, fping)** – Detect live hosts in a subnet.  
 - **ZMap** – Internet-scale scanning on single ports.  
 - **Netdiscover** – Useful for identifying hosts on local networks.  
 - **ARP-Scan** – Layer 2 discovery on local networks.
 
-**Operating System & Role Identification**
+ **Operating System & Role Identification**
 - **Nmap (OS detection)** – Accurate OS and uptime profiling.  
 - **Xprobe2** – Active OS fingerprinting.  
 - **p0f** – Passive OS detection (no active packets).  
