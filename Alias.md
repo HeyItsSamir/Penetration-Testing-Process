@@ -27,10 +27,14 @@ Aliases for managing Tor, testing anonymous connectivity, and launching applicat
 alias CheckProxychainsStatus='systemctl status tor || (echo "Tor is not running, starting it now..." && sudo systemctl start tor && echo "Tor service started successfully." && systemctl status tor)'
 
 # Test if you're connected to the Tor network via proxychains
-alias CheckProxychainsTunnel='proxychains4 curl https://check.torproject.org'
+alias CheckProxychainsTunnel="proxychains4 curl -s https://check.torproject.org | sed -n '/<head>/,/<\/head>/p'"
 
 # Restart Tor to reset identity or fix issues
 alias ResetProxychains='sudo systemctl restart tor && echo "Tor service restarted successfully." && systemctl status tor'
+
+# Check Tor IP Exit Node
+alias TorIP="proxychains4 curl -s https://check.torproject.org | grep -oP 'Your IP address appears to be:.*?<strong>\\K[\\d.]+'"
+
 ```
 ## ⬇️ How To..
 Open your alias file in a text editor (you can use .bashrc or .bash_aliases):
